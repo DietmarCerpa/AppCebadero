@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MenuConfiguracion">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="30dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:gravity="center_horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="dispositivo: "
+                    android:textAllCaps="true"
+                    android:id="@+id/idDisp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="hora: "
+                    android:textAllCaps="true"
+                    android:id="@+id/idHora"
+                    android:layout_below="@+id/idDisp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvDispositivo"
+                    android:layout_toRightOf="@+id/idDisp"
+                    android:text="bluetooth"
+                    android:textAllCaps="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvHora"
+                    android:layout_below="@+id/tvDispositivo"
+                    android:layout_toRightOf="@+id/idHora"
+                    android:layout_alignStart="@+id/tvDispositivo"
+                    android:layout_alignLeft="@+id/tvDispositivo"
+                    android:text="XX:XX"
+                    android:textAllCaps="true"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/pawprints_v24"
+                    android:layout_toRightOf="@+id/tvDispositivo"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/ivEstado"/>
+
+            </RelativeLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="configurar cebo"
+                android:layout_margin="5dp"
+                android:id="@+id/btnConfigCebo"
+                />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="caudal cebo"
+                android:layout_margin="5dp"
+                android:id="@+id/btnCaudalCebo"/>
+            
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" 
+                android:text="sensibilidad doppler"
+                android:layout_margin="5dp"
+                android:id="@+id/btnSensDoppler"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="horario de deteccion"
+                android:layout_margin="5dp"
+                android:id="@+id/btnHrDeteccion"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" 
+                android:text="registros"
+                android:textAllCaps="true"
+                android:gravity="center"
+                android:layout_margin="15dp"/>
+            
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="registro cebo"
+                android:layout_margin="5dp"
+                android:id="@+id/btnLogCebo"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="registro bajadas"
+                android:layout_margin="5dp"
+                android:id="@+id/btnLogBajadas"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="registro errores"
+                android:id="@+id/btnLogErrores"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="motores"
+                android:textAllCaps="true"
+                android:gravity="center"
+                android:padding="20dp"/>
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="20dp">
+                
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="motor 1"
+                    android:id="@+id/btnMotor1"/>
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="motor 2"
+                    android:id="@+id/btnMotor2"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+        
+
+
+    </ScrollView>
+
+
+</android.support.constraint.ConstraintLayout>
